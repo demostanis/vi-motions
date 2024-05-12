@@ -73,7 +73,7 @@ done
 # Add select-(in|a)-command
 zle -N select-a-command  -select-a-command
 zle -N select-in-command -select-a-command
-for m in vicmd viopp; do
+for m in viopp; do
 	bindkey -M "$m" 'as' select-a-command 'aS' select-a-command \
 		'is' select-in-command 'iS' select-in-command
 done
